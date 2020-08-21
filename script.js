@@ -7,6 +7,7 @@ const loader = document.getElementById('loader');
 
 // Toggle Theme
 function toggleTheme() {
+    document.getElementById('root').classList.toggle('dark');
     document.body.classList.toggle('dark-mode');
 }
 

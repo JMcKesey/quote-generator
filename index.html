@@ -8,28 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <button onclick="toggleTheme()">Change Theme</button>
-    <div class="quote-container" id="quote-container">
-        <!-- Quote -->
-        <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="quote"></span>
+<body class="body">
+    <div class="dark" id="root">
+        <h1>toggle theme</h1>
+        <!-- Toggle Slider -->
+        <!-- Rounded switch -->
+        <div class="toggle-pos">
+            <label class="switch">
+                <input type="checkbox" onclick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
         </div>
-        <!-- Author -->
-        <div class="quote-author">
-            <span id="author"></span>
+        <div class="quote-container" id="quote-container">
+            <!-- Quote -->
+            <div class="quote-text">
+                <i class="fas fa-quote-left"></i>
+                <span id="quote"></span>
+            </div>
+            <!-- Author -->
+            <div class="quote-author">
+                <span id="author"></span>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-quote">New Quote</button>
+            </div>
         </div>
-        <!-- Buttons -->
-        <div class="button-container">
-            <button class="twitter-button" id="twitter" title="Tweet This!">
-                <i class="fab fa-twitter"></i>
-            </button>
-            <button id="new-quote">New Quote</button>
-        </div>
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
     </div>
-    <!-- Loader -->
-    <div class="loader" id="loader"></div>
+  
     <!-- Script -->
     <script src="script.js"></script>
 </body>
