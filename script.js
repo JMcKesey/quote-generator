@@ -5,6 +5,11 @@ const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
+// Toggle Theme
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+}
+
 // Show Loading
 function loading() {
     loader.hidden = false;

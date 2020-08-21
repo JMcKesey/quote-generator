@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+/* Body Dark Mode */
+body.dark-mode {
+    filter:invert(1) hue-rotate(200deg) brightness(0.9);
+}
+
 html {
     box-sizing: border-box;
 }
